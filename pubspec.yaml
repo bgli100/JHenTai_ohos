@@ -19,7 +19,9 @@ dependencies:
       url: https://github.com/jiangtian616/dio
       path: dio
       ref: append-mode
-  get: 4.6.6
+  get:
+    git:
+      url: https://github.com/bgli100/flutter_get_ohos
   get_storage: 2.0.3
   extended_nested_scroll_view: 6.1.1
   html: 0.15.1
@@ -208,11 +210,6 @@ dependency_overrides:
     git:
       url: https://gitee.com/openharmony-sig/flutter_sqflite
       path: sqflite_common_ffi
-  get:
-    path: 'd:\dev\flutter_get_ohos\'
-    # git:
-      # url: https://gitee.com/openharmony-sig/fluttertpc_get
-
 
 dev_dependencies:
   flutter_test:
