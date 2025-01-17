@@ -217,7 +217,7 @@ abstract class BaseLayoutLogic extends GetxController with GetTickerProviderStat
     Share.shareXFiles(
       [XFile.fromData(data)],
       sharePositionOrigin: Rect.fromLTWH(0, 0, fullScreenWidth, readPageState.displayRegionSize.height * 2 / 3),
-      fileNameOverrides: [fileName],
+      // fileNameOverrides: [fileName],
     );
   }
 

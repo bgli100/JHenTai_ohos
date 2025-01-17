@@ -69,7 +69,8 @@ dependencies:
   file_picker: 8.1.3
   local_auth: 2.2.0
   blur: 3.1.0
-  flutter_windowmanager_plus: 1.0.1
+  # blurs the app switching UI, require dart >= 3.5.0
+  # flutter_windowmanager_plus: 1.0.1
   animate_do: 3.3.4
   share_plus: 10.1.1
   syncfusion_flutter_charts: 27.1.48
@@ -106,7 +107,9 @@ dependencies:
   flutter_displaymode: 0.6.0
   pinput: 2.2.31
   wakelock_plus: 1.2.8
-  flex_color_picker: 3.1.0
+  flex_color_picker:
+    git:
+      url: https://github.com/bgli100/flutter_flex_color_picker_ohos
   zoom_widget: 2.0.1
   android_intent_plus: 5.0.2
   integral_isolates: 0.4.1
@@ -133,7 +136,84 @@ dependency_overrides:
       path: dio
       ref: append-mode
   collection: 1.19.0
-    
+  path_provider:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_packages.git
+      path: packages/path_provider/path_provider
+  path_provider_ohos:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_packages.git
+      path: packages/path_provider/path_provider_ohos
+  flutter_inappwebview:	
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_inappwebview.git
+      path: flutter_inappwebview
+  permission_handler:
+    git: 
+      url: https://gitee.com/openharmony-sig/flutter_permission_handler.git
+      path: permission_handler
+  share_plus:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_plus_plugins.git
+      path: packages/share_plus/share_plus
+  battery_plus:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_plus_plugins.git
+      path: packages/battery_plus/battery_plus
+  url_launcher:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_packages.git
+      path: packages/url_launcher/url_launcher
+  shared_preferences:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_packages.git
+      path: packages/shared_preferences/shared_preferences
+  local_auth:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_packages.git
+      path: packages/local_auth/local_auth
+  device_info_plus:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_plus_plugins.git
+      path: packages/device_info_plus/device_info_plus
+  package_info_plus:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_plus_plugins.git
+      path: packages/package_info_plus/package_info_plus
+  connectivity_plus:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_plus_plugins.git
+      path: packages/connectivity_plus/connectivity_plus
+  network_info_plus:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_plus_plugins.git
+      path: packages/network_info_plus/network_info_plus
+  file_selector:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_packages.git
+      path: packages/file_selector/file_selector
+  image_picker:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_packages.git
+      path: packages/image_picker/image_picker
+  flutter_widget_from_html:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_widget_from_html
+      path: packages/enhanced
+  sqflite:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_sqflite
+      path: sqflite
+  sqflite_common_ffi:
+    git:
+      url: https://gitee.com/openharmony-sig/flutter_sqflite
+      path: sqflite_common_ffi
+  get:
+    path: 'd:\dev\flutter_get_ohos\'
+    # git:
+      # url: https://gitee.com/openharmony-sig/fluttertpc_get
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

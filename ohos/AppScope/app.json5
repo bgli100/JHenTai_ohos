@@ -1,0 +1,10 @@
+{
+  "app": {
+    "bundleName": "top.jtmonster.jhentai_ohos",
+    "vendor": "example",
+    "versionCode": 275,
+    "versionName": "8.0.6",
+    "icon": "$media:app_icon",
+    "label": "$string:app_name"
+  }
+}

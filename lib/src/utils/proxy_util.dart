@@ -14,7 +14,7 @@ Future<String> getSystemProxyAddress() async {
     SystemNetworkProxy.init();
     systemProxyAddress = await SystemNetworkProxy.getProxyServer();
   }
-  if (GetPlatform.isMobile) {
+  if (GetPlatform.isMobile && !GetPlatform.isOhos) {
     HttpProxy httpProxy = await HttpProxy.createHttpProxy();
     if (!isEmptyOrNull(httpProxy.host) && !isEmptyOrNull(httpProxy.port)) {
       systemProxyAddress = '${httpProxy.host}:${httpProxy.port}';

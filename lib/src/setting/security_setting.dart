@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:extended_image/extended_image.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_windowmanager_plus/flutter_windowmanager_plus.dart';
+//import 'package:flutter_windowmanager_plus/flutter_windowmanager_plus.dart';
 import 'package:get/get.dart';
 import 'package:jhentai/src/enum/config_enum.dart';
 import 'package:jhentai/src/setting/download_setting.dart';
@@ -73,9 +73,9 @@ class SecuritySetting with JHLifeCircleBeanWithConfigStorage implements JHLifeCi
     if (GetPlatform.isAndroid) {
       ever(enableBlur, (_) {
         if (enableBlur.isTrue) {
-          FlutterWindowManagerPlus.addFlags(FlutterWindowManagerPlus.FLAG_SECURE);
+          //FlutterWindowManagerPlus.addFlags(FlutterWindowManagerPlus.FLAG_SECURE);
         } else {
-          FlutterWindowManagerPlus.clearFlags(FlutterWindowManagerPlus.FLAG_SECURE);
+          //FlutterWindowManagerPlus.clearFlags(FlutterWindowManagerPlus.FLAG_SECURE);
           saveEnableAuthOnResume(false);
         }
         SystemChrome.setSystemUIOverlayStyle(

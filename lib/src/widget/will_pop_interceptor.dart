@@ -26,7 +26,7 @@ class _WillPopInterceptorState extends State<WillPopInterceptor> {
     return PopScope(
       child: widget.child,
       canPop: Platform.isAndroid ? false : true,
-      onPopInvokedWithResult: (bool didPop, FormData? result) async {
+      onPopInvoked: (bool didPop) async {
         if (didPop) {
           return;
         }

@@ -70,7 +70,6 @@ List<JHLifeCircleBean> lifeCircleBeans = [
   scheduleService,
   searchHistoryService,
   storageService,
-  superResolutionService,
   tagTranslationService,
   tagSearchOrderOptimizationService,
   volumeService,
@@ -110,7 +109,6 @@ void main(List<String> args) async {
   for (JHLifeCircleBean bean in lifeCircleBeans) {
     await bean.initBean();
   }
-
   runApp(const MyApp());
 }
 
